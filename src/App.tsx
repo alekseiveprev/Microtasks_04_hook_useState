@@ -11,17 +11,11 @@ export const App: FC<{ name: string }> = ({ name }) => {
     console.log(a);
   };
 
-  //рабочий вариант1
-  let [b = setA, setB] = useState();
+  
   const resetAHandler = () => {
     setA(0);
   };
-
-  //рабочий вариант2
-  /*  let [b, setB] = useState();
-  const resetAHandler = () => {
-    setA(0);    
-  }; */
+  
 
   return (
     <div>
